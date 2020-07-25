@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>I CAN GET A JOB - {{wannajob}}</title>
+  <link href="static/css/index.css" rel="stylesheet"></link>
+</head>
+
+<body>
+  <header>
+    <!-- <img src="./templates/banner.gif"> -->
+    <h1><a href='/'>I CAN GET A JOB</a></h1>
+  </header>
+  <main>
+  {% if not error:%}
+  <div class="job-list">
+    <div class="top"><h2>Title</h2></div>
+    <div class="top"><h2>Company</h2></div>
+    <div class="top"><h2>By</h2></div>
+    <div class="top"><h2>Apply</h2></div>
+    {% for d in db[wannajob] %}
+      <div class="jobs title">
+        {{d['title']}}
+      </div>
+      <div class="jobs company">
+        {{d['company']}}
+      </div>
+      <div class="jobs by">
+        by {{d['by']}}
+      </div>
+      <div class="jobs apply">
+        <a href="{{d['link']}}">APPLY</a>
+      </div>
+    {% endfor %}
+  </div>
+  </main>
+  {% else %}
+    <h2>Not Found!!</h2>
+  {% endif %}
+</body>
+
+</html>

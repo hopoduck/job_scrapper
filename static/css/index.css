@@ -1,0 +1,97 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+header {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+a {
+  color: #6052d6;
+  text-decoration: none;
+}
+h1 {
+  font-size: 80pt;
+  font-weight: 500;
+  padding: 30px;
+}
+form {
+  vertical-align: bottom;
+  margin: 50px;
+}
+input[type="text"] {
+  border: 0px;
+  border-bottom: 2px solid lightgray;
+  font-size: 40pt;
+  line-height: 40pt;
+  width: 600px;
+  height: 80px;
+  text-align: right;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 0px;
+  border-bottom: 2px solid lightblue;
+}
+input[type="text"]:hover {
+  outline: none;
+  border: 0px;
+  border-bottom: 2px solid lightblue;
+}
+input[type="submit"] {
+  border: none;
+  border-radius: 10pt;
+  background-color: rgba(44, 44, 44, 0.2);
+  width: 120pt;
+  height: 80px;
+  font-size: 20pt;
+  line-height: 20pt;
+  vertical-align: bottom;
+}
+input[type="submit"]:hover {
+  background-color: rgba(44, 44, 44, 0.6);
+  vertical-align: bottom;
+  cursor: pointer;
+}
+div.job-list {
+  display: grid;
+  grid-template-columns: 500px 200px 200px 100px;
+  text-align: left;
+}
+div.top {
+  text-align: center;
+  line-height: 80px;
+  font-weight: 600;
+}
+div.jobs {
+  border: 0px;
+  border-top-width: 1px;
+  padding: 0px 5px;
+  border-style: solid;
+  font-size: 14pt;
+  line-height: 100px;
+  vertical-align: middle;
+  height: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.apply {
+  text-align: center;
+}
