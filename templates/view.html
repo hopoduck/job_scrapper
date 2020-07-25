@@ -4,6 +4,7 @@
 <head>
   <title>I CAN GET A JOB - {{wannajob}}</title>
   <link href="static/css/index.css" rel="stylesheet"></link>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,6 +14,11 @@
   </header>
   <main>
   {% if not error:%}
+  <div class="export">
+    <a href='/export?wannajob={{wannajob}}' id="export">
+      <i class="fas fa-file-export fa"></i> Export .CSV
+    </a>
+  </div>
   <div class="job-list">
     <div class="top"><h2>Title</h2></div>
     <div class="top"><h2>Company</h2></div>

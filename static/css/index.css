@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-.notosanskr * {
+* {
   font-family: "Noto Sans KR", sans-serif;
 }
 * {
@@ -63,6 +63,7 @@ input[type="submit"] {
   font-size: 20pt;
   line-height: 20pt;
   vertical-align: bottom;
+  font-family: FontAwesome;
 }
 input[type="submit"]:hover {
   background-color: rgba(44, 44, 44, 0.6);
@@ -94,4 +95,45 @@ div.jobs {
 }
 div.apply {
   text-align: center;
+}
+.export {
+  border: 0px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: right;
+}
+#export:hover,
+#export:focus {
+  animation-duration: 3s;
+  animation-name: rainbow;
+  animation-iteration-count: infinite;
+}
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  23% {
+    color: yellow;
+  }
+  36% {
+    color: yellowgreen;
+  }
+  49% {
+    color: green;
+  }
+  62% {
+    color: blue;
+  }
+  74% {
+    color: indigo;
+  }
+  86% {
+    color: purple;
+  }
+  100% {
+    color: red;
+  }
 }
